@@ -27,7 +27,10 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(1000, 700, P2D);
+  var cnv = createCanvas(1000, 700, P2D);
+  var x = (windowWidth - width) / 2;
+  var y = (windowHeight - height) / 2;
+  cnv.position(x, y);
   frameRate(30);
   bgm.loop();
   start = millis();
