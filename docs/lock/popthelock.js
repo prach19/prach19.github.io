@@ -4,8 +4,8 @@ let lock, unlock, lose;
 let bgm, lost;
 let endX, endY, distance, l;
 let newRandomPos, elapsed, start, timer;
-posX = [120, 480, 300, 200, 380, 165, 440];
-posY = [450, 450, 625, 300, 290, 570, 560];
+const posX = [120, 480, 300, 200, 380, 165, 440];
+const posY = [450, 450, 625, 300, 290, 570, 560];
 let randomPos;
 let c;
 let comboDiameter = 50,
