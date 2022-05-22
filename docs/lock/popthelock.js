@@ -85,7 +85,7 @@ function draw() {
   }
 
 //conditions and actions for losing
-  if (((distance > comboDiameter) && keyIsPressed==true && key == ' ' ) || (int(timer) == 0)) {
+  if (((distance > comboDiameter) && keyIsPressed==true && key == ' ' ) || (int(timer) <= 0)) {
   bgm.pause(); 
   lost.play();
   noLoop(); // stopping the draw() in order to display the game over screen
