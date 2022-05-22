@@ -7,7 +7,7 @@ let newRandomPos, elapsed, start, timer;
 const posX = [120, 480, 300, 200, 380, 165, 440];
 const posY = [450, 450, 625, 300, 290, 570, 560];
 let randomPos;
-let c;
+let c, cnv;
 let comboDiameter = 50,
     lineRotate = 0.0,
     lockRadius = 225,
@@ -27,10 +27,7 @@ function preload() {
 }
 
 function setup() {
-  var cnv = createCanvas(1000, 700, P2D);
-  var x = (windowWidth - width) / 2;
-  var y = (windowHeight - height) / 2;
-  cnv.position(x, y);
+  cnv = createCanvas(1060, 700, P2D);
   frameRate(30);
   bgm.loop();
   start = millis();
@@ -39,6 +36,9 @@ function setup() {
 }
 
 function draw() {
+  var x = (windowWidth - width) / 2;
+  var y = 2*(windowHeight - height) / 3;
+  cnv.position(x, y);
   background(0);
   imageMode(CENTER);
   image(lock, 300, 350);
