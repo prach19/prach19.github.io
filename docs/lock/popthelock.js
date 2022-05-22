@@ -44,7 +44,7 @@ function draw() {
   image(lock, 300, 350);
   words();
 
-  //timer
+//timer
   elapsed = millis() - start;
   timer = (62000 - elapsed)/1000; // 62s is used in order to give the program 1s to load up completely
   textSize(60);
@@ -85,7 +85,7 @@ function draw() {
   }
 
 //conditions and actions for losing
-  if (((distance > comboDiameter) && keyIsPressed==true && key == ' ' ) || timer == 0) {
+  if (((distance > comboDiameter) && keyIsPressed==true && key == ' ' ) || (int(timer) == 0)) {
   bgm.pause(); 
   lost.play();
   noLoop(); // stopping the draw() in order to display the game over screen
@@ -108,11 +108,12 @@ function mousePressed(){
 function words(){
   textFont(font);
   stroke(0);
+  strokeWeight(0);
   fill(225, 167, 58);
   textAlign(CENTER);
   textSize(32);
   text("POP THE LOCK", 700, 100);
-  text("TIMER:", 725, 440);
+  text("TIMER", 725, 440);
   textSize(20);
   text("hit the space bar when the red line and the yellow circle intersect", 720, 150);
   text("to pop the combination", 720, 180);
