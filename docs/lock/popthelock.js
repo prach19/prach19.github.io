@@ -28,8 +28,12 @@ function preload() {
 
 function setup() {
   cnv = createCanvas(1060, 700, P2D);
-  cnv.parent('sketch');
-  cnv.style('display', 'block');
+  var x = (windowWidth - width) / 2;
+  var y = (windowHeight - height) / 2;
+  cnv.position(x, y);
+  cnv.style('display', 'flex');
+  cnv.style('padding', '20');
+  //style="width: 1060px; height: 700px; display: block; left: -9px; top: 59.3333px; padding: 20px; position: centre;
   frameRate(30);
   bgm.loop();
   start = millis();
