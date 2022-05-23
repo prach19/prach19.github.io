@@ -117,13 +117,13 @@ function words(){
   strokeWeight(0);
   fill(225, 167, 58);
   textAlign(CENTER);
-  textSize(32);
+  textSize(64);
   text("POP THE LOCK", 700, 100);
   text("TIMER", 725, 440);
   textSize(20);
-  text("hit the space bar when the red line and the yellow circle intersect", 720, 150);
+  text("hit the space bar when the red line \nand the yellow circle intersect", 720, 150);
   text("to pop the combination", 720, 180);
   text("when popped, the red line will move faster!", 720, 240);
   text("fail to pop the combination and you lose :(", 720, 300);
-  text("note: \ndue to the nature of the random function, \nthe combinations may not appear in new places each time", 400, 600, 600, 800);
+  text("note: \ndue to the nature of the random function, \nthe combinations may not appear in new places each time", 400, 600);
 }
