@@ -28,7 +28,7 @@ function preload() {
 
 function setup() {
   cnv = createCanvas(1060, 700, P2D);
-  cnv.parent("wrapper");
+  cnv.parent("main");
   frameRate(30);
   bgm.loop();
   start = millis();
