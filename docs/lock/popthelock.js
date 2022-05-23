@@ -29,6 +29,7 @@ function preload() {
 function setup() {
   cnv = createCanvas(1060, 700, P2D);
   cnv.parent('sketch');
+  cnv.style('display', 'block');
   frameRate(30);
   bgm.loop();
   start = millis();
