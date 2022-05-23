@@ -121,9 +121,8 @@ function words(){
   text("POP THE LOCK", 700, 100);
   text("TIMER", 725, 440);
   textSize(20);
-  text("hit the space bar when the red line \nand the yellow circle intersect", 720, 150);
-  text("to pop the combination", 720, 180);
-  text("when popped, the red line will move faster!", 720, 240);
+  text("hit the space bar when the red line \nand the yellow circle intersect \nto pop the combination", 720, 150);
+  text("when popped, the red line will move faster!", 720, 250);
   text("fail to pop the combination and you lose :(", 720, 300);
-  text("note: \ndue to the nature of the random function, \nthe combinations may not appear in new places each time", 400, 600);
+  text("note: \ndue to the nature of the random function, \nthe combinations may not appear in new places each time", 720, 600);
 }
