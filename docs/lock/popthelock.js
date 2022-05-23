@@ -94,7 +94,7 @@ function draw() {
   bgm.pause(); 
   lost.play();
   noLoop(); // stopping the draw() in order to display the game over screen
-  image(lose, width/2, height/2;
+  image(lose, width/2, height/2);
    }
 }
   
