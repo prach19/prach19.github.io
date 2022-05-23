@@ -33,7 +33,6 @@ function setup() {
   cnv.position(x, y);
   cnv.style('display', 'flex');
   cnv.style('padding', '20');
-  //style="width: 1060px; height: 700px; display: block; left: -9px; top: 59.3333px; padding: 20px; position: centre;
   frameRate(30);
   bgm.loop();
   start = millis();
@@ -76,18 +75,18 @@ function draw() {
 // conditions and actions for winning
   if ((distance < comboDiameter) && keyIsPressed==true && key == ' ' ) { 
     setTimeout(function newPos(){
-  let newRandomPos = int(random(posX.length));
-  c.x = posX[newRandomPos];
-  c.y = posY[newRandomPos];
-  speed += 0.1 ; // increasing the speed as the player wins
-}, 75);
+        let newRandomPos = int(random(posX.length));
+        c.x = posX[newRandomPos];
+        c.y = posY[newRandomPos];
+        speed += 0.1 ; // increasing the speed as the player wins
+}, 50);
   
  }
 
 //winner screen
   if (speed == 2.50){
     noLoop();
-    image (unlock, 500, 350);
+    image (unlock, width/2, heigh/2);
   }
 
 //conditions and actions for losing
@@ -95,7 +94,7 @@ function draw() {
   bgm.pause(); 
   lost.play();
   noLoop(); // stopping the draw() in order to display the game over screen
-  image(lose, 500, 350);
+  image(lose, width/2, height/2;
    }
 }
   
