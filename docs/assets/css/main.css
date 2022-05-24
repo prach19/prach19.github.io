@@ -3098,7 +3098,7 @@ header.major > .date:after {
 
 header.major .date:before,
 header.major .date:after {
-  border-top-color: #eeeeee;
+  border-top-color: #c7c5c5;
 }
 
 /* Table */
@@ -3990,7 +3990,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 }
 
 #main > .posts > article {
-  border-color: #eeeeee;
+  border-color: #e3d8f1;
   border-left-width: 2px;
   border-style: solid;
   border-top-width: 2px;
@@ -4260,7 +4260,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 
 #footer header.major .date:before,
 #footer header.major .date:after {
-  border-top-color: #e2e2e2;
+  border-top-color: #bdb9b9;
 }
 
 #footer table tbody tr {

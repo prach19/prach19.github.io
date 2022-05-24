@@ -84,7 +84,7 @@ function draw() {
  }
 
 //winner screen
-  if (speed == 2.50){
+  if (speed == 1.0){
     noLoop();
     image (unlock, width/2, heigh/2);
   }
