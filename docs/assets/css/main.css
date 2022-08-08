@@ -3921,10 +3921,12 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   font-size: 4rem;
   line-height: 1.1;
   margin: 0 0 2rem 0;
+  border-color: #e3d8f1;
 }
 
 #main > .post.featured {
   text-align: center;
+  border-color: #e3d8f1;
 }
 
 @media screen and (max-width: 1280px) {
@@ -3941,6 +3943,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   #main > .post header.major > .date {
     margin-top: -1rem;
     margin-bottom: 2rem;
+
   }
 
   #main > .post header.major > h1,
@@ -3948,6 +3951,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
     font-size: 2.5rem;
     line-height: 1.2;
     margin: 0 0 1.5rem 0;
+    border-color: #e3d8f1;
   }
 }
 
@@ -3967,6 +3971,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   text-align: center;
   width: 100%;
   padding: 0;
+  border-color: #e3d8f1;
 }
 
 #main > .posts > * {
@@ -3982,6 +3987,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 
 #main > .posts > * {
   width: 50%;
+  
 }
 
 #main > .posts > * {
@@ -3999,14 +4005,17 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 
 #main > .posts > article > :last-child {
   margin-bottom: 0;
+  border-color: #e3d8f1;
 }
 
 #main > .posts > article:nth-child(2n - 1) {
   border-left-width: 0;
+  border-color: #e3d8f1;
 }
 
 #main > .posts > article:nth-child(-n + 2) {
   border-top-width: 0;
+  border-color: #e3d8f1;
 }
 
 @media screen and (max-width: 980px) {
@@ -4036,6 +4045,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 
   #main > .posts > article:nth-child(-n + 2) {
     border-top-width: 2px;
+    
   }
 
   #main > .posts > article:nth-child(n) {
