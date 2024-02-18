@@ -9,11 +9,25 @@
 <body>
     <div class="container">
         <div class="navigation-bar">
-            <iframe src="https://chat.dante-ai.com/embed?kb_id=e31870f4-82fb-41e8-b471-075542d3e7b4&token=b0da97cb-a8de-4d91-9241-ab489819c9b9&modeltype=gpt-3.5-turbo&logo=ZmFsc2U=&mode=undefined" allow="clipboard-write; microphone" width="100%" height="950" frameborder="0" ></iframe>
+            <!-- <iframe src="https://chat.dante-ai.com/embed?kb_id=e31870f4-82fb-41e8-b471-075542d3e7b4&token=b0da97cb-a8de-4d91-9241-ab489819c9b9&modeltype=gpt-3.5-turbo&logo=ZmFsc2U=&mode=undefined" allow="clipboard-write; microphone" width="100%" height="950" frameborder="0" ></iframe> -->
         </div>
          <div class="centered-box">
         YU Adivising Chatbot
         </div>
     </div>
+
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "a40cfdef-1a56-4c5b-873b-5040ad0de7eb", // The ID of this integration.
+          region: "us-south", // The region your integration is hosted in.
+          serviceInstanceID: "83b373c1-bf64-44d9-8725-cb3608f6e403", // The ID of your service instance.
+          onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
 </body> 
 </html>
