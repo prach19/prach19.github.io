@@ -96,6 +96,16 @@ video {
   vertical-align: baseline;
 }
 
+.port-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .port-list{
+    display: inline;
+  }
+
 article,
 canvas,
 aside,
